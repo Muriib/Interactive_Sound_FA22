@@ -1,0 +1,55 @@
+#N canvas 500 306 665 564 12;
+#X obj 191 192 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000 0 1;
+#X obj 188 259 metro 1000;
+#X floatatom 276 182 5 0 0 0 - - - 0;
+#X obj 187 310 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
+#000000 #000000;
+#X obj 212 66 loadbang;
+#X obj 143 375 int 1;
+#X obj 225 371 + 1;
+#X floatatom 113 429 5 0 0 0 - - - 0;
+#X text 289 374 sequence adds 1;
+#X text 171 440 module mathematical function;
+#X msg 316 134 100;
+#X obj 108 472 % 4;
+#X obj 103 520 + 1;
+#X floatatom 99 574 5 0 0 0 - - - 0;
+#X obj 459 536 select 1 2 3 4;
+#X obj 457 599 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
+#000000 #000000;
+#X obj 488 595 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
+#000000 #000000;
+#X obj 521 597 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
+#000000 #000000;
+#X obj 558 597 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
+#000000 #000000;
+#X obj 425 794 osc~;
+#X obj 436 753 mtof;
+#X obj 409 840 *~ 0.5;
+#X obj 393 885 output~;
+#X floatatom 446 666 5 0 0 0 - - - 0;
+#X msg 371 634 60;
+#X obj 440 708 select 0;
+#X connect 0 0 1 0;
+#X connect 1 0 3 0;
+#X connect 2 0 1 1;
+#X connect 3 0 5 0;
+#X connect 4 0 10 0;
+#X connect 4 0 0 0;
+#X connect 5 0 6 0;
+#X connect 5 0 7 0;
+#X connect 6 0 5 1;
+#X connect 7 0 11 0;
+#X connect 10 0 2 0;
+#X connect 11 0 12 0;
+#X connect 12 0 13 0;
+#X connect 13 0 14 0;
+#X connect 14 1 15 0;
+#X connect 15 0 23 0;
+#X connect 19 0 21 0;
+#X connect 20 0 19 0;
+#X connect 21 0 22 0;
+#X connect 23 0 25 0;
+#X connect 24 0 23 0;
+#X connect 25 1 20 0;
